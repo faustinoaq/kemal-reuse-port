@@ -1,0 +1,17 @@
+name: KeRePo
+version: 0.1.0
+
+authors:
+  - Faustino Aguilar <faustinoaq@gmail.com>
+
+targets:
+  KeRePo:
+    main: src/KeRePo.cr
+
+crystal: 0.24.1
+
+license: MIT
+
+dependencies:
+  kemal:
+    github: kemalcr/kemal
