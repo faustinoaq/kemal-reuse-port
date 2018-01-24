@@ -4,15 +4,33 @@ TODO: Write a description here
 
 ## Installation
 
-TODO: Write installation instructions here
+```
+shards build --release
+```
 
 ## Usage
 
-TODO: Write usage instructions here
+```
+for i in $(seq 1 $(nproc --all)); do
+  ./bin/KeRePo &
+done
 
-## Development
+wait
+```
 
-TODO: Write development instructions here
+Then use `wrk` (Tested on Intel Celeron 2795U 1.4Ghz x2 8GB)
+
+```
+Running 10s test @ http://localhost:3000
+  2 threads and 100 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    43.75us  216.71us  12.99ms   99.15%
+    Req/Sec    27.93k     2.03k   30.18k    85.00%
+  555732 requests in 10.02s, 59.36MB read
+  Socket errors: connect 0, read 0, write 0, timeout 49
+Requests/sec:  55484.50
+Transfer/sec:      5.93MB
+```
 
 ## Contributing
 
