@@ -5,7 +5,7 @@ Testing Kemal performance, see: https://github.com/kemalcr/kemal/issues/73
 ## Installation
 
 ```
-shards build --release
+shards build --release --no-debug
 ```
 
 ## Usage
