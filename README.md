@@ -1,6 +1,6 @@
 # KeRePo
 
-TODO: Write a description here
+Testing Kemal performance, see: https://github.com/kemalcr/kemal/issues/73
 
 ## Installation
 
